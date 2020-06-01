@@ -16,4 +16,4 @@ public class Main {
         System.out.println("Значеник температуры по °C: "+num);
         System.out.println("Значеник температуры по °F: "+((num1/num2) * num + num3));
     }
-}
+} 
