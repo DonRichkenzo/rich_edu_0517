@@ -7,13 +7,18 @@ TF = (9 / 5) * TC + 32
 Пример вывода:
 105.8 */
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        float num = 30;
+        Scanner scanner = new Scanner (System.in);
+        int a;
         float num1 = 9;
         float num2 = 5;
         float num3= 32;
-        System.out.println("Значеник температуры по °C: "+num);
-        System.out.println("Значеник температуры по °F: "+((num1/num2) * num + num3));
+        System.out.print("Введите температуру по °C: ");
+        a = scanner.nextInt();
+        System.out.println("Значеник температуры по °F: "+((num1/num2) * a + num3));
+
     }
-} 
+}
