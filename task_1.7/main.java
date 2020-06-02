@@ -19,7 +19,7 @@ public class Main {
         b = scanner.nextInt();
         System.out.print("Введите значение C: ");
         c = scanner.nextInt();
-        System.out.print("Объем бассейна равен: "+(a*b*c));
+        System.out.print("Объем бассейна равен: "+(a*b*c*1000));
         System.out.print(" литров");
 
     }
