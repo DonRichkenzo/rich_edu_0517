@@ -13,12 +13,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("МамаМылаРаму");
-        System.out.println("МамаРамуМыла");
-        System.out.println("МылаРамуМама");
-        System.out.println("МылаМамаРаму");
-        System.out.println("РамуМылаМама");
-        System.out.println("РамуМамаМыла");
-
+        String n[]={"Мама","Мыла","Раму"}  ;
+        for( int a=0;a<3;a++)
+            for(int b=0;b<3;b++)
+                if (a!=b)
+                    System.out.println(n[a]+n[b]+n[3-a-b]);
     }
 }
