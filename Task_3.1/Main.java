@@ -20,31 +20,36 @@ public class Main {
         System.out.println("Меня зовут : "+gosha.getName());
         System.out.println("Имя моей мамы : "+gosha.getMother().getName());
         System.out.println("Имя моего папы : "+gosha.getFather().getName());
-        System.out.println("У меня две бабушки, бабушка : " +alex.getMother().getName()+ " и " +eva.getMother().getName());
-        System.out.println("У меня два деда, дед : " +alex.getFather().getName()+ " и " +eva.getFather().getName());
+        System.out.println("У меня две бабушки, бабушка : " +gosha.getMother().getMother().getName()+ " и " +gosha.getFather().getMother().getName());
+        System.out.println("У меня два деда, дед : " +gosha.getMother().getFather().getName()+ " и " +gosha.getFather().getFather().getName());
     }
+
 }
 
-class Person{
+class Person {
     private String name;
     private String lastname;
     private int age;
     private Person mother;
     private Person father;
-    public Person(String name, String lastname, int age, Person mother, Person father){
+
+    public Person(String name, String lastname, int age, Person mother, Person father) {
         this.name = name;
         this.lastname = lastname;
         this.age = age;
         this.mother = mother;
         this.father = father;
     }
+
     public String getName() {
         return this.name;
     }
-    public Person getMother(){
+
+    public Person getMother() {
         return this.mother;
     }
-    public Person getFather(){
+
+    public Person getFather() {
         return this.father;
     }
 }
